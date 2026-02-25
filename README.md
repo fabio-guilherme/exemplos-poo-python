@@ -1,2 +1,2 @@
 # exemplos-poo-python
-POO examples with Python.
+POO examples with Python
