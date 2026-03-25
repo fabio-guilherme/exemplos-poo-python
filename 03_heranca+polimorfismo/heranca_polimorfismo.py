@@ -1,11 +1,14 @@
+from unicodedata import name
+
+
 class Funcionario:
-    pass
+    #pass
     def __init__(self, nome, nif, salario):
         self._nome = nome
         self._nif = nif
         self._salario = salario
 
-    # outros metodos e properties
+    # outros métodos e properties
 
     def get_bonificacao(self):
         return self._salario * 0.10
