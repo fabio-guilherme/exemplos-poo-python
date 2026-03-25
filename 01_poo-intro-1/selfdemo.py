@@ -11,18 +11,18 @@ class ProgStaff:
 peter = ProgStaff(2500)
 john = ProgStaff(2500)
 
-'''
+#'''
 ProgStaff.companyName = 'ProgrammingSchool'
 print(peter.companyName)
 print(john.companyName)
-'''
-'''
+#'''
+#'''
 peter.salary = 2700
 print(peter.salary)
 print(john. salary)
-'''
+#'''
 
-'''
+#'''
 john.printInfo()
 ProgStaff.printInfo(john)
-'''
+#'''

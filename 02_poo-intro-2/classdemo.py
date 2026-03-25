@@ -28,10 +28,10 @@ class Staff:
         else:
             print('Position is invalid. No changes made.')
 
-    '''
+    
     def __add__(self, other):
         return self.pay + other.pay
-    '''
+    
 
 class ManagementStaff(Staff):
     def __init__ (self, pName, pPay, pAllowance, pBonus):
@@ -40,7 +40,7 @@ class ManagementStaff(Staff):
         #Staff.__init__(self, 'Manager', pName, pPay)
         self.allowance = pAllowance
         self.bonus = pBonus
-
+    
     def calculatePay(self):
         basicPay = super().calculatePay()
         self.pay = basicPay + self.allowance
