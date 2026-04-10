@@ -56,7 +56,50 @@ print("1 record inserted, ID:", mycursor.lastrowid)
 '''
 
 # Select From a Table
+'''
 mycursor.execute("SELECT * FROM customers")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+'''
+
+  # Selecting Columns
+'''
+mycursor.execute("SELECT name, address FROM customers")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+'''
+
+# Using the fetchone() Method
+'''
+mycursor.execute("SELECT * FROM customers")
+
+myresult = mycursor.fetchone()
+
+print(myresult)
+'''
+
+# Python MySQL Where
+''' 
+sql = "SELECT * FROM customers WHERE address ='Park Lane 38'"
+
+mycursor.execute(sql)
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+'''
+
+# Wildcard Characters
+sql = "SELECT * FROM customers WHERE address LIKE '%way%'"
+
+mycursor.execute(sql)
 
 myresult = mycursor.fetchall()
 
