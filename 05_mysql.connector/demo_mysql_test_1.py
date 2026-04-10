@@ -38,7 +38,7 @@ for x in mycursor:
 
 # Check if Table Exists
 #'''
-mycursor.execute("SHOW TABLES")
+#mycursor.execute("SHOW TABLES")
 
 for x in mycursor:
   print(x)
