@@ -109,8 +109,8 @@ for x in myresult:
 '''
 
 # Prevent SQL Injection
-sql = "SELECT * FROM customers WHERE address = %s"
-adr = ("Yellow Garden 2", )
+sql = "SELECT * FROM customers WHERE address = %s OR name = %s"
+adr = ("Yellow Garden 2", "John")
 
 mycursor.execute(sql, adr)
 
