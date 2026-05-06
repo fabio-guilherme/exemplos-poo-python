@@ -25,4 +25,8 @@ class Evento:
             f"descricao='{self.__descricao}', "
             f"data='{self.__data}'"
             "}"
+        '''
+        return (
+            f"{self.__descricao} - {self.__data}"
+        '''
         )

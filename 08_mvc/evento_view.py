@@ -17,6 +17,7 @@ class EventoView:
     def display_evento(self, evento: Evento) -> None:
         print(self.__azul)
         print(f"Evento: {evento.descricao} | Data: {evento.data}")
+        #print(f"Evento adicionado: {evento}")
         print(self.__reset)
         print()
 
