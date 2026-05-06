@@ -1,7 +1,6 @@
 from evento_view import EventoView
 from evento_controller import EventoController
 
-
 def main() -> None:
     view = EventoView()
     controller = EventoController(view)
