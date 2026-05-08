@@ -9,5 +9,8 @@ class Conta:
         self.titular = titular
         self.tipo = tipo
 
+    def __str__(self):
+        return f"Conta de {self.titular} do tipo {self.tipo.name}"
+
 c1 = Conta("Ana", TipoConta.CORRENTE)
 print(c1.tipo.name)

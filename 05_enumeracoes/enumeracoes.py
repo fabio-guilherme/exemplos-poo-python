@@ -19,6 +19,9 @@ print(Cor.VERMELHO)
 print(Cor.VERMELHO.name)   # nome
 print(Cor.VERMELHO.value)  # valor
 
+for cor in Cor:
+    print(cor.name, cor.value)
+
 print(Dia.SEGUNDA)
 print(Dia.SEGUNDA.name)   # nome
 print(Dia.SEGUNDA.value)  # valor
